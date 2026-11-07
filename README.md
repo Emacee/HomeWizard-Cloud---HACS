@@ -8,6 +8,7 @@ HomeWizard cloud, for meters outside your Home Assistant network.**
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/docs/faq/custom_repositories)
 [![Validate](https://github.com/Emacee/HomeWizard-Cloud---HACS/actions/workflows/validate.yml/badge.svg)](https://github.com/Emacee/HomeWizard-Cloud---HACS/actions/workflows/validate.yml)
 [![Tests](https://github.com/Emacee/HomeWizard-Cloud---HACS/actions/workflows/tests.yml/badge.svg)](https://github.com/Emacee/HomeWizard-Cloud---HACS/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Custom integration that reads a **HomeWizard Wi-Fi P1 meter through the HomeWizard
 cloud**. It is meant for a P1 meter that is *not* on the same network as Home
@@ -182,3 +183,8 @@ is original artwork made for this project. It is not a HomeWizard logo.
 "HomeWizard" is a trademark of HomeWizard B.V. and is used here only to describe which
 products this integration works with. This project is not affiliated with or endorsed
 by HomeWizard.
+
+## License
+
+[MIT](LICENSE). The license covers the code and the icon, but not HomeWizard's
+trademarks.
