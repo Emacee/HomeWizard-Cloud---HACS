@@ -12,13 +12,13 @@
   source is in `assets/icon.svg`, plus a GitHub social preview image.
 - README: compatibility overview of the HomeWizard products (only the P1 meter is
   supported), when to use cloud versus local, and a trademark note.
-- README and changelog are now in English.
+- README and changelog are now in English. Entity names are still translated (English
+  and Dutch).
 - Licensed under MIT (`LICENSE`).
 - CI fix: ruff is pinned (`ruff==0.17.4`) and the lint rules are set explicitly in
   `pyproject.toml`. Before this, CI ran a newer ruff whose defaults no longer include
   `DTZ007`, so the intended `# noqa: DTZ007` in `protocol.py` failed as an unused
-  directive (`RUF100`). Entity names are still translated (English
-  and Dutch).
+  directive (`RUF100`).
 - No functional changes. Existing installs keep their entities, because the domain
   and unique ids are unchanged.
 
