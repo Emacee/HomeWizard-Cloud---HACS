@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Original artwork for HomeWizard Cloud (unofficial). Not a HomeWizard logo. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1FC7B0"/>
+      <stop offset="1" stop-color="#1565C0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#tile)"/>
+  <g fill="#FFFFFF">
+    <circle cx="160" cy="316" r="60"/>
+    <circle cx="352" cy="316" r="60"/>
+    <rect x="160" y="256" width="192" height="120"/>
+    <circle cx="200" cy="270" r="72"/>
+    <circle cx="276" cy="232" r="96"/>
+    <circle cx="346" cy="290" r="62"/>
+  </g>
+  <path d="M282 176 L206 294 H252 L234 350 L310 240 H264 L288 176 Z"
+        fill="url(#tile)" stroke="url(#tile)" stroke-width="10" stroke-linejoin="round"/>
+</svg>

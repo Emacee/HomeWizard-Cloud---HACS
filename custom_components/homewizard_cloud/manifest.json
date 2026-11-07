@@ -1,0 +1,15 @@
+{
+  "domain": "homewizard_cloud",
+  "name": "HomeWizard Cloud",
+  "codeowners": [
+    "@Emacee"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Emacee/HomeWizard-Cloud---HACS",
+  "integration_type": "device",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/Emacee/HomeWizard-Cloud---HACS/issues",
+  "requirements": [],
+  "version": "0.1.1"
+}

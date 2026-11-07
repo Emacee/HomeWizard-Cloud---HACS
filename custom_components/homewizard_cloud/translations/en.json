@@ -1,0 +1,176 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HomeWizard Energy account",
+        "description": "Log in with the account you use in the HomeWizard Energy app. Data is read through the HomeWizard cloud, so this works when the P1 meter is not on the same network as Home Assistant. Use the official HomeWizard integration when the local API is reachable.",
+        "data": {
+          "email": "E-mail",
+          "password": "Password"
+        },
+        "data_description": {
+          "email": "The e-mail address of your HomeWizard Energy account.",
+          "password": "The password of that account."
+        }
+      },
+      "device": {
+        "title": "Choose a P1 meter",
+        "description": "The account has more than one P1 meter. Add the others by adding the integration again.",
+        "data": {
+          "device_id": "P1 meter"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in again",
+        "description": "The HomeWizard cloud no longer accepts the login for {name}.",
+        "data": {
+          "email": "E-mail",
+          "password": "Password"
+        },
+        "data_description": {
+          "email": "The e-mail address of your HomeWizard Energy account.",
+          "password": "The password of that account."
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail address or password is incorrect.",
+      "cannot_connect": "Could not reach the HomeWizard cloud.",
+      "no_devices": "No P1 meter found in this account.",
+      "device_not_found": "This account does not contain the P1 meter of this entry.",
+      "unknown": "Unexpected error, see the log."
+    },
+    "abort": {
+      "already_configured": "All P1 meters of this account are already set up.",
+      "reauth_successful": "Login updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Realtime stream",
+        "data": {
+          "realtime": "Realtime power stream",
+          "three_phases": "Realtime power per phase",
+          "realtime_interval": "Minimum time between updates"
+        },
+        "data_description": {
+          "realtime": "Second-by-second power through a second WebSocket, next to the normal state stream.",
+          "three_phases": "Ask the realtime stream for the power of each phase as well.",
+          "realtime_interval": "Home Assistant writes new values at most this often. Lower means more database load."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "active_power": {
+        "name": "Power"
+      },
+      "active_phase_power": {
+        "name": "Power phase {phase}"
+      },
+      "active_voltage": {
+        "name": "Voltage"
+      },
+      "active_phase_voltage": {
+        "name": "Voltage phase {phase}"
+      },
+      "active_current": {
+        "name": "Current"
+      },
+      "active_phase_current": {
+        "name": "Current phase {phase}"
+      },
+      "active_frequency": {
+        "name": "Frequency"
+      },
+      "total_energy_import": {
+        "name": "Energy import"
+      },
+      "total_energy_import_tariff": {
+        "name": "Energy import tariff {tariff}"
+      },
+      "total_energy_export": {
+        "name": "Energy export"
+      },
+      "total_energy_export_tariff": {
+        "name": "Energy export tariff {tariff}"
+      },
+      "active_power_average": {
+        "name": "Average demand"
+      },
+      "monthly_power_peak": {
+        "name": "Peak demand current month"
+      },
+      "monthly_power_peak_timestamp": {
+        "name": "Peak demand current month timestamp"
+      },
+      "total_gas": {
+        "name": "Gas"
+      },
+      "voltage_sag_phase_count": {
+        "name": "Voltage sags detected phase {phase}"
+      },
+      "voltage_swell_phase_count": {
+        "name": "Voltage swells detected phase {phase}"
+      },
+      "any_power_fail_count": {
+        "name": "Power failures detected"
+      },
+      "long_power_fail_count": {
+        "name": "Long power failures detected"
+      },
+      "wifi_strength": {
+        "name": "Wi-Fi strength"
+      },
+      "dsmr_version": {
+        "name": "DSMR version"
+      },
+      "meter_model": {
+        "name": "Smart meter model"
+      },
+      "realtime_power": {
+        "name": "Power (realtime)"
+      },
+      "realtime_phase_power": {
+        "name": "Power phase {phase} (realtime)"
+      },
+      "external_gas_meter": {
+        "name": "Gas"
+      },
+      "external_water_meter": {
+        "name": "Water"
+      },
+      "external_warm_water_meter": {
+        "name": "Warm water"
+      },
+      "external_heat_meter": {
+        "name": "Heat"
+      },
+      "external_inlet_heat_meter": {
+        "name": "Heat (inlet)"
+      },
+      "external_other": {
+        "name": "External meter"
+      },
+      "active_tariff": {
+        "name": "Tariff",
+        "state": {
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4"
+        }
+      }
+    },
+    "binary_sensor": {
+      "cloud_connection": {
+        "name": "Cloud connection"
+      },
+      "meter_online": {
+        "name": "P1 meter online"
+      }
+    }
+  }
+}
